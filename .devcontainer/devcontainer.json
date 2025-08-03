@@ -1,0 +1,10 @@
+{
+  "name": "PHPMailer Alpine",
+  "image": "php:8.2-cli-alpine",
+  "postCreateCommand": "apk add --no-cache bash busybox-extras composer libtool libzip-dev zip libpng-dev libjpeg-turbo-dev openssl && composer install",
+  "customizations": {
+    "vscode": {
+      "extensions": ["bmewburn.vscode-intelephense-client"]
+    }
+  }
+}
